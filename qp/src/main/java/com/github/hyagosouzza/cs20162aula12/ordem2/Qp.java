@@ -8,7 +8,13 @@ package com.github.hyagosouzza.cs20162aula12.ordem2;
 /**Classe com os métodos necessários para verificar a qualidade do parser.
  * @version 1.0
  */
-public class Qp {
+public final class Qp {
+
+    /**
+     * Construtor privado da classe para satisfazer o CheckStyle.
+     */
+    private Qp() {
+    }
 
     /**
      * Método que recebe a escolha do usuário em relação ao tipo de arquivo do
@@ -56,6 +62,10 @@ public class Qp {
      */
     public static void main(final String[] args) {
 
-        System.exit(pseudoMain(args[1], args[0]));
+        if (args.length == 1) {
+            System.exit(pseudoMain("-j", args[0]));
+        } else {
+            System.exit(pseudoMain(args[1], args[0]));
+        }
     }
 }

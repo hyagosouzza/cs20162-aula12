@@ -17,7 +17,13 @@ import java.util.List;
  * Classe que possui o método Parser.
  * @version 1.0
  */
-public class Parser {
+public final class Parser {
+
+    /**
+     * Construtor privado da classe para satisfazer o CheckStyle.
+     */
+    private Parser() {
+    }
 
     /**
     * Método para recer uma expressão e analisá-la.
