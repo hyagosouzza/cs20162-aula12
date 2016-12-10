@@ -59,8 +59,7 @@ public class Html {
      */
     public final void relatorioHtml() throws Exception {
 
-        relatorio = new FileWriter("C:\\Users\\Inclusão 2\\Documents\\cs20162-"
-                + "aula12\\qp\\relatorio.html");
+        relatorio = new FileWriter("relatorio.html");
         gravar = new PrintWriter(relatorio);
         GerenciadorDeTestes ger = new GerenciadorDeTestes(arrayLista);
 
