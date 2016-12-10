@@ -59,8 +59,7 @@ public class Json {
 
         jsonObject.put(frase, frase2);
 
-        writeFile = new FileWriter("C:\\Users\\Inclusão 2\\Documents\\cs20162-"
-                + "aula12\\qp\\relatorio.json");
+        writeFile = new FileWriter("relatorio.json");
         writeFile.write(jsonObject.toJSONString());
         writeFile.close();
     }
